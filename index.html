@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐄 Moo Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- MooCoin Value -->
+    <div class="moocoin-container">
+        💰 MooCoin Value: <span id="moo-value">0</span>
+    </div>
+
+    <!-- Global Counter Display -->
+    <div class="global-counter-container">
+        🌎 Global Moo Count: <span id="global-counter">0</span>
+    </div>
+
+    <h1>Moo Counter</h1>
+    <h1></h1 >
+
+    <div class="counter-container">
+        <span class="cow" onclick="showPopup()">🐄</span>
+        <p class="click-instruction">Click the cow to find out what's going on!</p>
+        <button class="button" onclick="changeCounter(-1)">−</button>
+        <div class="counter" id="counter">0</div>
+        <button class="button" onclick="changeCounter(1)">+</button>
+    </div>
+
+    <div class="floating-cows" id="floating-cows"></div>
+
+    <div class="popup" id="popup">
+        <h2>🐄 Welcome to Moo Counter! 🐄</h2>
+        <p>
+            🌍 **Each person gets ONE click per day!**<br>
+            ➕ Click +1 to add to the global moo count.<br>
+            ➖ Click -1 to subtract from the global moo count.<br>
+            🔥 The secret value function determines MooCoin’s worth!<br>
+            🧠 Can you figure it out?
+        </p>
+        <button onclick="hidePopup()">Got it!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
